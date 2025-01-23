@@ -20,6 +20,7 @@ type Event struct {
 
 type Reminder struct {
 	Type        string       `json:"type"`
+	TriggerType string       `json:"trigger_type"`
 	Description string       `json:"description,omitempty"`
 	AfterEvent  bool         `json:"after_event,omitempty"`
 	Duration    JSONDuration `json:"duration,omitempty"`

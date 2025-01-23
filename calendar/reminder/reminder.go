@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+const Notification = "notification"
+
+// TODO handle email type.
+
 // intentional start with \n
 const reminderTemplate = `
 BEGIN:VALARM

@@ -34,8 +34,11 @@ func main() {
 		opts[0] = event.WithDescription(e.Description)
 		opts[1] = event.WithLocation(e.Location)
 		for i, r := range e.Reminders {
-			if r.Type != reminder.Relative {
-				panic(fmt.Sprintf("reminder trigger type not handled: %q", r.Type))
+			if r.Type != reminder.Notification {
+				panic(fmt.Sprintf("reminder type not handled: %q", r.Type))
+			}
+			if r.TriggerType != reminder.Relative {
+				panic(fmt.Sprintf("reminder trigger type not handled: %q", r.TriggerType))
 			}
 
 			opts[i+2] = event.WithReminder(
