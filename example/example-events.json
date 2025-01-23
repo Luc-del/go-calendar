@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "title": "Project Kickoff Meeting",
+      "start_date": "2025-01-23T10:00:00Z",
+      "duration": "1h30m0s",
+      "description": "Initial meeting to discuss project goals and deliverables.",
+      "location": "123 Main St, New York, NY",
+      "reminders": [
+        {
+          "type": "relative",
+          "description": "Reminder email to be sent",
+          "after_event": false,
+          "duration": "24h0m0s"
+        },
+        {
+          "type": "relative",
+          "description": "Popup reminder before meeting",
+          "after_event": false,
+          "duration": "30m0s"
+        }
+      ]
+    },
+    {
+      "title": "Weekly Standup",
+      "start_date": "2025-01-23T11:00:00Z",
+      "duration": "15m0s",
+      "location": "somewhere",
+      "description": "Short daily team meeting to discuss progress and blockers.",
+      "reminders": [
+        {
+          "type": "relative",
+          "after_event": false,
+          "duration": "10m0s"
+        }
+      ]
+    },
+    {
+      "title": "Lunch with Client",
+      "start_date": "2025-01-23T12:00:00Z",
+      "duration": "2h0m0s",
+      "location": "Downtown Cafe, San Francisco",
+      "reminders": [
+        {
+          "type": "relative",
+          "description": "Send confirmation email to client",
+          "after_event": false,
+          "duration": "48h0m0s"
+        }
+      ]
+    },
+    {
+      "title": "Product Launch",
+      "start_date": "2025-01-23T13:00:00Z",
+      "duration": "3h0m0s"
+    }
+  ]
+}
